@@ -50,7 +50,33 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104426441-cc5a5880-5536-11eb-90e3-39f48082480d.png)
 ![image](https://user-images.githubusercontent.com/72436785/104426627-0a577c80-5537-11eb-82f0-93b0871fc424.png)
 *************************************************************************************************************************
-program3
+program3: Develop a program to find sum and mean of a set of images.
+Create n number of images and read the directory and perform operation.
+description:
+   img.append is uesd to append all the images together
+import cv2
+import os
+path = 'C:\Pictures'
+imgs = []
+
+files = os.listdir(path)
+for file in files:
+    filepath=path+"\\"+file
+    imgs.append(cv2.imread(filepath))
+i=0
+im = []
+for im in imgs:
+    #cv2.imshow(files[i],imgs[i])
+    im+=imgs[i]
+    i=i+1
+cv2.imshow("sum of three pictures",im)
+meanImg = im/len(files)
+cv2.imshow("mean of  three pictures",meanImg)
+cv2.waitKey(0)
+
+output:
+
+
 
 
 
