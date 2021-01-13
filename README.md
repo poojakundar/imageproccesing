@@ -1,5 +1,10 @@
 # imageproccesing
 Program1:Program to display grayscale image
+    description:
+Binary images: are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
+grayscale image:
+
+
 
 import numpy as np
 import cv2
