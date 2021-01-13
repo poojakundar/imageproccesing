@@ -60,6 +60,9 @@ program3: Develop a program to find sum and mean of a set of images.
 Create n number of images and read the directory and perform operation.
 description:
    img.append is uesd to append all the images together
+   Adding Images To add two images or add a constant value to an image. • [imadd] function adds the value of each pixel in one of the input images with the corresponding pixel in the other input image and returns the sum in the corresponding pixel of the output image.
+   
+   
 import cv2
 import os
 path = 'C:\Pictures'
@@ -204,6 +207,7 @@ Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
  [17. 31. 19.]]
+ ******************************************************************************************************************
 
 
 
