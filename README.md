@@ -19,7 +19,7 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104417169-d0cc4480-5529-11eb-8b18-92c391cbe2d4.png)
 ![image](https://user-images.githubusercontent.com/72436785/104417993-1ccbb900-552b-11eb-919a-338e861b7ff1.png)
 **********************************************************************************************************************
-program2:Program to performe linear transformation #scaling
+program2:Program to performe linear transformation #scaling(A)
 description:Scaling is the procedure of measuring and assigning the objects to the numbers according to the specified rules. In other words, the process of locating the measured objects on the continuum, a continuous sequence of numbers to which the objects are assigned is called as scaling.
 cv2.resize() is uesd to resizes the given iamges.
 
@@ -32,8 +32,11 @@ dsize = (width, height)
 output = cv2.resize(image, dsize)
 cv2.imshow('Original',output) 
 cv2.waitKey(0)
-
-
 output:
+![image](https://user-images.githubusercontent.com/72436785/104422255-5bfd0880-5531-11eb-8112-47b67380feea.png)
+
+
+
+
 
 
