@@ -101,6 +101,20 @@ cv2.destroyAllWindows()
 output:
 ![image](https://user-images.githubusercontent.com/72436785/104432074-7c32c480-553d-11eb-9dca-2d54c8ac1e6b.png)
 ****************************************************************************************************************************
+program5:Program to covert the given image to different color space
+
+import cv2 
+img = cv2.imread('flower1.jpg') 
+img1 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
+img2= cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+img3=cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)   
+cv2.imshow('image', img1)
+cv2.waitKey(0)
+cv2.imshow('image', img2) 
+cv2.waitKey(0)
+cv2.imshow('image', img3)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
