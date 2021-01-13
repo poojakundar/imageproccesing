@@ -140,7 +140,12 @@ img = Image.fromarray(array)
 img.save('testrgb.png')
 img.show()
 cv2.waitKey(0)
+
+
 output:
+
+
+
    ![image](https://user-images.githubusercontent.com/72436785/104433811-5c040500-553f-11eb-9c89-765ed1bdbfab.png)
 
 
