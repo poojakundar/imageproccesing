@@ -124,6 +124,11 @@ output:
    ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
 *********************************************************************************************************************************
 program6:Create an image from 2d array
+description:
+An image is an array, or a matrix, of square pixels (picture elements) arranged in columns and rows.
+An image — an array or a matrix of pixels arranged in columns and rows. In a (8-bit) greyscale image each picture element has an assigned intensity that ranges from 0 to 255.
+A 2D array has a type such as int[][] or String[][], with two pairs of square brackets. ... The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns.
+PIL: Python Imaging Library (abbreviated as PIL) (in newer versions known as Pillow) is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats. It is available for Windows, Mac OS X and Linux.
 
 import numpy as np
 from PIL import Image
@@ -136,6 +141,8 @@ img = Image.fromarray(array)
 img.save('testrgb.png')
 img.show()
 cv2.waitKey(0)
+output:
+   ![image](https://user-images.githubusercontent.com/72436785/104433811-5c040500-553f-11eb-9c89-765ed1bdbfab.png)
 
 
 
