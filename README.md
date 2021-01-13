@@ -104,6 +104,9 @@ output:
 program5:Program to covert the given image to different color space
 description:
 A color space is a specific organization of colors. ... Adding a specific mapping function between a color model and a reference color space establishes within the reference color space a definite "footprint", known as a gamut , and for a given color model this defines a color space.
+COLOR_BGR2RGB is used to convert bgr image to RGB image
+COLOR_BGR2HSV is used to convert BGR image to HSV image
+COLOR_BGR2YCrCb is uesd to convert BGR image to YCrCb image
 
 import cv2 
 img = cv2.imread('flower1.jpg') 
@@ -118,8 +121,8 @@ cv2.imshow('image', img3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 output:
- 
    ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
+*********************************************************************************************************************************
 
 
 
