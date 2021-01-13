@@ -82,6 +82,7 @@ program4:convert the the given image to gray scale and binary image
   description:
 Binary images: are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
 grayscale image:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. ... Often, the grayscale intensity is stored as an 8-bit integer giving 256 possible different shades of gray from black to white.
+threshold:Thresholding produces a binary image, where all pixels with intensities above (or below) a threshold value are turned on, while all other pixels are turned off.
 
 import numpy as np
 import cv2
@@ -100,6 +101,8 @@ cv2.destroyAllWindows()
 output:
 ![image](https://user-images.githubusercontent.com/72436785/104431347-a20b9980-553c-11eb-9618-ae793c3161ef.png)
 ![image](https://user-images.githubusercontent.com/72436785/104431527-d97a4600-553c-11eb-8f97-45d57d1cdb9d.png)
+![image](https://user-images.githubusercontent.com/72436785/104431708-0c243e80-553d-11eb-96f5-817744e5d59e.png)
+****************************************************************************************************************************
 
 
 
