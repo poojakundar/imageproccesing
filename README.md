@@ -116,7 +116,8 @@ cv2.imshow('image', img3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 output:
-![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
+ 
+   ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
 
 
 
