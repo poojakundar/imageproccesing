@@ -123,6 +123,20 @@ cv2.destroyAllWindows()
 output:
    ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
 *********************************************************************************************************************************
+program6:Create an image from 2d array
+
+import numpy as np
+from PIL import Image
+import cv2
+array = np.zeros([100, 200, 3], dtype=np.uint8)
+array[:,:100] = [200, 200, 200] 
+array[:,100:] = [200, 100, 200]   
+
+img = Image.fromarray(array)
+img.save('testrgb.png')
+img.show()
+cv2.waitKey(0)
+
 
 
 
