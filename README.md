@@ -75,7 +75,7 @@ cv2.imshow("mean of  three pictures",meanImg)
 cv2.waitKey(0)
 
 output:
-
+![image](https://user-images.githubusercontent.com/72436785/104429483-81424480-553a-11eb-9cd2-f73ecbf76cf7.png)
 
 
 
