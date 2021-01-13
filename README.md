@@ -37,13 +37,15 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104422255-5bfd0880-5531-11eb-8112-47b67380feea.png)
 ![image](https://user-images.githubusercontent.com/72436785/104423301-c3678800-5532-11eb-8663-8c8c586dfda6.png)
 
-program2(b)ro
+program2(b)rotation
+
 import cv2
 image=cv2.imread('flower1.jpg')
 cv2.imshow('original',image)
 src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow('output',src)
 cv2.waitKey(0)
+output:
 
 
 
