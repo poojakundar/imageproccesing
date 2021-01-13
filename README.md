@@ -38,6 +38,7 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104423301-c3678800-5532-11eb-8663-8c8c586dfda6.png)
 
 program2(b)rotation
+cv2.ROTATE_90_CLOCKWISE is used to rorate image in cl;ockwise direction
 
 import cv2
 image=cv2.imread('flower1.jpg')
@@ -48,6 +49,8 @@ cv2.waitKey(0)
 output:
 ![image](https://user-images.githubusercontent.com/72436785/104426441-cc5a5880-5536-11eb-90e3-39f48082480d.png)
 ![image](https://user-images.githubusercontent.com/72436785/104426627-0a577c80-5537-11eb-82f0-93b0871fc424.png)
+*************************************************************************************************************************
+program3
 
 
 
