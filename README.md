@@ -32,7 +32,10 @@ dsize = (width, height)
 output = cv2.resize(image, dsize)
 cv2.imshow('Original',output) 
 cv2.waitKey(0)
+
+
 output:
+
 
 ![image](https://user-images.githubusercontent.com/72436785/104434804-85716080-5540-11eb-9479-8585de42e47d.png)
 
@@ -46,7 +49,11 @@ cv2.imshow('original',image)
 src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow('output',src)
 cv2.waitKey(0)
+
+
 output:
+
+
 ![image](https://user-images.githubusercontent.com/72436785/104434945-b2257800-5540-11eb-942e-13a875e4c41a.png)
 *************************************************************************************************************************
 program3: Develop a program to find sum and mean of a set of images.
@@ -73,7 +80,9 @@ meanImg = im/len(files)
 cv2.imshow("mean of  three pictures",meanImg)
 cv2.waitKey(0)
 
+
 output:
+
 ![image](https://user-images.githubusercontent.com/72436785/104435138-e39e4380-5540-11eb-9e85-37ba04617a45.png)
 
 *********************************************************************************************************************
@@ -98,6 +107,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 output:
+
+
 ![image](https://user-images.githubusercontent.com/72436785/104432074-7c32c480-553d-11eb-9dca-2d54c8ac1e6b.png)
 ****************************************************************************************************************************
 program5:Program to covert the given image to different color space
@@ -119,7 +130,11 @@ cv2.waitKey(0)
 cv2.imshow('image', img3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
 output:
+
+
    ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
 *********************************************************************************************************************************
 program6:Create an image from 2d array
