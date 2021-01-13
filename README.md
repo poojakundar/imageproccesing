@@ -16,4 +16,6 @@ cv2.imwrite("grayscale.png",image)
 
 output:
 ![image](https://user-images.githubusercontent.com/72436785/104417169-d0cc4480-5529-11eb-8b18-92c391cbe2d4.png)
+![image](https://user-images.githubusercontent.com/72436785/104417993-1ccbb900-552b-11eb-919a-338e861b7ff1.png)
+
 
