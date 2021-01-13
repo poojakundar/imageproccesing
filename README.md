@@ -77,6 +77,28 @@ cv2.waitKey(0)
 output:
 ![image](https://user-images.githubusercontent.com/72436785/104429483-81424480-553a-11eb-9cd2-f73ecbf76cf7.png)
 ![image](https://user-images.githubusercontent.com/72436785/104429720-cb2b2a80-553a-11eb-9820-ffa245390d72.png)
+*********************************************************************************************************************
+program4:convert the the given image to gray scale and binary image
+  description:
+Binary images: are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
+grayscale image:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. ... Often, the grayscale intensity is stored as an 8-bit integer giving 256 possible different shades of gray from black to white.
+
+import numpy as np
+import cv2
+img = cv2.imread('flower1.jpg')
+cv2.imwrite('graynature.jpg',img)
+cv2.imshow('Original',img,)
+img = cv2.imread('flower1.jpg',0)
+cv2.imwrite('gray.jpg',img)
+cv2.imshow('Origi',img,)
+img = cv2.imread('flower1.jpg', 2) 
+ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY) 
+cv2.imshow("Binary", bw_img) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+output:
+
 
 
 
