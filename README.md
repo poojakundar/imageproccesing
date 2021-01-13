@@ -102,6 +102,8 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104432074-7c32c480-553d-11eb-9dca-2d54c8ac1e6b.png)
 ****************************************************************************************************************************
 program5:Program to covert the given image to different color space
+description:
+A color space is a specific organization of colors. ... Adding a specific mapping function between a color model and a reference color space establishes within the reference color space a definite "footprint", known as a gamut , and for a given color model this defines a color space.
 
 import cv2 
 img = cv2.imread('flower1.jpg') 
