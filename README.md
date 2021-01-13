@@ -34,8 +34,8 @@ cv2.imshow('Original',output)
 cv2.waitKey(0)
 output:
 
-![image](https://user-images.githubusercontent.com/72436785/104422255-5bfd0880-5531-11eb-8112-47b67380feea.png)
-![image](https://user-images.githubusercontent.com/72436785/104423301-c3678800-5532-11eb-8663-8c8c586dfda6.png)
+![image](https://user-images.githubusercontent.com/72436785/104434804-85716080-5540-11eb-9479-8585de42e47d.png)
+
 
 program2(b)rotation
 cv2.ROTATE_90_CLOCKWISE is used to rorate image in cl;ockwise direction
