@@ -1,11 +1,13 @@
 # imageproccesing
 **Program1:Program to display grayscale image using read and write operation**
-    description:
+ 
+ description:
 Binary images: are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
 grayscale image:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. ... Often, the grayscale intensity is stored as an 8-bit integer giving 256 possible different shades of gray from black to white.
 to read an image we use the function cv2.imread().
 to save a image we use cv2.imwrite().
 to destory all the windows().
+
 ```python
 import numpy as np
 import cv2
