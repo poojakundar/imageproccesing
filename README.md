@@ -187,6 +187,10 @@ output:
 
 **program7:Find the sum of the neighborhood values of the matrix.**
 
+description:
+Given a matrix mat[][] and an integer K, the task is to find the maximum neighbor within an absolute distance of K for each element of the matrix.
+
+
 ```python
 import numpy as np
 
