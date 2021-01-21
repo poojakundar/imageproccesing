@@ -22,6 +22,8 @@ output:
 
 **********************************************************************************************************************
 **program2:Program to performe linear transformation #scaling(A)**
+
+
 description:Scaling is the procedure of measuring and assigning the objects to the numbers according to the specified rules. In other words, the process of locating the measured objects on the continuum, a continuous sequence of numbers to which the objects are assigned is called as scaling.
 cv2.resize() is uesd to resizes the given iamges.
 ```phython
@@ -43,6 +45,8 @@ output:
 
 
 **program2(b)rotation**
+
+
 cv2.ROTATE_90_CLOCKWISE is used to rorate image in cl;ockwise direction
 ```pythpon
 import cv2
@@ -59,6 +63,8 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104434945-b2257800-5540-11eb-942e-13a875e4c41a.png)
 *************************************************************************************************************************
 **program3: Develop a program to find sum and mean of a set of images.**
+
+
 Create n number of images and read the directory and perform operation.
 description:
    img.append is uesd to append all the images together
@@ -91,12 +97,14 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104435138-e39e4380-5540-11eb-9e85-37ba04617a45.png)
 
 *********************************************************************************************************************
-program4:convert the the given image to gray scale and binary image
-  description:
+**program4:convert the the given image to gray scale and binary image**
+
+
+description:
 Binary images: are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color.
 grayscale image:A grayscale (or graylevel) image is simply one in which the only colors are shades of gray. ... Often, the grayscale intensity is stored as an 8-bit integer giving 256 possible different shades of gray from black to white.
 threshold:Thresholding produces a binary image, where all pixels with intensities above (or below) a threshold value are turned on, while all other pixels are turned off.
-
+```phyton
 import numpy as np
 import cv2
 img = cv2.imread('flower1.jpg')
@@ -110,19 +118,22 @@ ret, bw_img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 cv2.imshow("Binary", bw_img) 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
 output:
 
 
 ![image](https://user-images.githubusercontent.com/72436785/104432074-7c32c480-553d-11eb-9dca-2d54c8ac1e6b.png)
 ****************************************************************************************************************************
-program5:Program to covert the given image to different color space
+**program5:Program to covert the given image to different color space**
+
+
 description:
 A color space is a specific organization of colors. ... Adding a specific mapping function between a color model and a reference color space establishes within the reference color space a definite "footprint", known as a gamut , and for a given color model this defines a color space.
 COLOR_BGR2RGB is used to convert bgr image to RGB image
 COLOR_BGR2HSV is used to convert BGR image to HSV image
 COLOR_BGR2YCrCb is uesd to convert BGR image to YCrCb image
-
+```python
 import cv2 
 img = cv2.imread('flower1.jpg') 
 img1 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
@@ -135,20 +146,23 @@ cv2.waitKey(0)
 cv2.imshow('image', img3)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 output:
 
 
    ![image](https://user-images.githubusercontent.com/72436785/104432418-ddf32e80-553d-11eb-937f-ceafc3e12fef.png)
 *********************************************************************************************************************************
-program6:Create an image from 2d array
+**program6:Create an image from 2d array**
+
+
 description:
 An image is an array, or a matrix, of square pixels (picture elements) arranged in columns and rows.
 An image — an array or a matrix of pixels arranged in columns and rows. In a (8-bit) greyscale image each picture element has an assigned intensity that ranges from 0 to 255.
 A 2D array has a type such as int[][] or String[][], with two pairs of square brackets. ... The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns.
 PIL: Python Imaging Library (abbreviated as PIL) (in newer versions known as Pillow) is a free and open-source additional library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats. It is available for Windows, Mac OS X and Linux.
 
+```python
 import numpy as np
 from PIL import Image
 import cv2
@@ -160,7 +174,7 @@ img = Image.fromarray(array)
 img.save('testrgb.png')
 img.show()
 cv2.waitKey(0)
-
+```
 
 output:
 
@@ -169,9 +183,9 @@ output:
    ![image](https://user-images.githubusercontent.com/72436785/104433811-5c040500-553f-11eb-9c89-765ed1bdbfab.png)
 ************************************************************************************************************************************
 
+**program7:Find the sum of the neighborhood values of the matrix.**
 
-program7:Find the sum of the neighborhood values of the matrix.
-
+```python
 import numpy as np
 
 M = [[1, 2, 3],
@@ -198,19 +212,23 @@ for i in range(M.shape[0]):
 
 print ("Original matrix:\n", M)
 print ("Summed neighbors matrix:\n", N)
-
+```
 
 output:
 Original matrix:
  [[1 2 3]
  [4 5 6]
  [7 8 9]]
+ 
 Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
  [17. 31. 19.]]
  ******************************************************************************************************************
-program8
+**program8:Find the neighborhood values of the matrix**
+
+
+```python
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
@@ -219,6 +237,7 @@ def neighbors(radius, rowNumber, columnNumber):
             for j in range(columnNumber-1-radius, columnNumber+radius)]
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(2, 2, 2)
+```
  output:
  
 initial_array :  [[1 2 5 3]
@@ -233,8 +252,10 @@ Out[3]:
  [0, 9, 6, 1, 0],
  [0, 0, 0, 0, 0]]
 *****************************************************************************************
-program9:
-implement nagative transfromation
+**program9:
+ program to implement nagative transfromation of image**
+ 
+ ```python
 import cv2
 import numpy as np
 img=cv2.imread("flower1.jpg")
@@ -243,7 +264,7 @@ cv2.waitKey(0)
 img_neg=255-img
 cv2.imshow('negative',img_neg)
 cv2.waitKey(0)
-
+```
 output:
 ![image](https://user-images.githubusercontent.com/72436785/105163125-5753c980-5ac8-11eb-8403-84e9f1e33db3.png)
 
