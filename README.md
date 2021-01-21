@@ -254,6 +254,9 @@ im = Image.open(r"flower1.jpg")
 im.show()
 im3 = ImageEnhance.Color(im) 
 im3.enhance(4.3).show()
+
+output:
+![image](https://user-images.githubusercontent.com/72436785/105278728-193fce00-5bcc-11eb-9fb9-c7b82aaac305.png)
 ************************************************
 program11:
 # Python programe to illustrate 
