@@ -21,10 +21,10 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104434477-1e53ac00-5540-11eb-85cb-4986f27151d5.png)
 
 **********************************************************************************************************************
-program2:Program to performe linear transformation #scaling(A)
+**program2:Program to performe linear transformation #scaling(A)**
 description:Scaling is the procedure of measuring and assigning the objects to the numbers according to the specified rules. In other words, the process of locating the measured objects on the continuum, a continuous sequence of numbers to which the objects are assigned is called as scaling.
 cv2.resize() is uesd to resizes the given iamges.
-
+```phython
 import cv2
 image= cv2.imread('flower1.jpg')
 scale_percent = 500
@@ -34,7 +34,7 @@ dsize = (width, height)
 output = cv2.resize(image, dsize)
 cv2.imshow('Original',output) 
 cv2.waitKey(0)
-
+```
 
 output:
 
@@ -42,29 +42,29 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/104434804-85716080-5540-11eb-9479-8585de42e47d.png)
 
 
-program2(b)rotation
+**program2(b)rotation**
 cv2.ROTATE_90_CLOCKWISE is used to rorate image in cl;ockwise direction
-
+```pythpon
 import cv2
 image=cv2.imread('flower1.jpg')
 cv2.imshow('original',image)
 src=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow('output',src)
 cv2.waitKey(0)
-
+```
 
 output:
 
 
 ![image](https://user-images.githubusercontent.com/72436785/104434945-b2257800-5540-11eb-942e-13a875e4c41a.png)
 *************************************************************************************************************************
-program3: Develop a program to find sum and mean of a set of images.
+**program3: Develop a program to find sum and mean of a set of images.**
 Create n number of images and read the directory and perform operation.
 description:
    img.append is uesd to append all the images together
    Adding Images To add two images or add a constant value to an image. • [imadd] function adds the value of each pixel in one of the input images with the corresponding pixel in the other input image and returns the sum in the corresponding pixel of the output image.
    
-   
+```phyton   
 import cv2
 import os
 path = 'C:\Pictures'
@@ -84,7 +84,7 @@ cv2.imshow("sum of three pictures",im)
 meanImg = im/len(files)
 cv2.imshow("mean of  three pictures",meanImg)
 cv2.waitKey(0)
-
+```
 
 output:
 
@@ -257,6 +257,8 @@ im3.enhance(4.3).show()
 
 output:
 ![image](https://user-images.githubusercontent.com/72436785/105278728-193fce00-5bcc-11eb-9fb9-c7b82aaac305.png)
+![image](https://user-images.githubusercontent.com/72436785/105278864-5e640000-5bcc-11eb-805d-ff2496141865.png)
+
 ************************************************
 program11:
 # Python programe to illustrate 
