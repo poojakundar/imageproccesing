@@ -484,6 +484,7 @@ if cv2.waitKey(0) & 0xff == 27:
 ```
 output:
 
+![image](https://user-images.githubusercontent.com/72436785/105329253-cc390900-5b85-11eb-890e-23a058914b19.png)
 
  **************************************************************
 ** program12:program to implement power_law transformation**
