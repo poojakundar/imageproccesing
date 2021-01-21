@@ -266,7 +266,8 @@ cv2.imshow('negative',img_neg)
 cv2.waitKey(0)
 ```
 output:
-![image](https://user-images.githubusercontent.com/72436785/105163125-5753c980-5ac8-11eb-8403-84e9f1e33db3.png)
+![image](https://user-images.githubusercontent.com/72436785/105279672-16de7380-5bce-11eb-8b2b-835b1d8c87eb.png)
+
 
 ***********************************************************
 program10:
