@@ -473,6 +473,7 @@ if cv2.waitKey(0) & 0xff == 27:
 	cv2.destroyAllWindows()
 ```
 output:
+![image](https://user-images.githubusercontent.com/72436785/105325050-0227be80-5b81-11eb-88c1-a090a5a73259.png)
 
  **************************************************************
 ** program12:
