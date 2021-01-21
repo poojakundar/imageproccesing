@@ -235,6 +235,9 @@ Summed neighbors matrix:
  ******************************************************************************************************************
 **program8:Find the neighborhood values of the matrix**
 
+decription:
+Given a matrix mat[][] and an integer K, the task is to find the maximum neighbor within an absolute distance of K for each element of the matrix.
+
 
 ```python
 import numpy as np
@@ -261,6 +264,7 @@ Out[3]:
  [0, 0, 0, 0, 0]]
  ***************************************************************************************
  **program9: operator overloading **
+ ```cpp
  #include <iostream>
 using namespace std;
 class matrix
@@ -373,7 +377,7 @@ int main()
  p * q;
 return 0;
 }
-
+```
 output:
 Enter the row and column size for the  matrix
 2
@@ -482,7 +486,9 @@ output:
 ![image](https://user-images.githubusercontent.com/72436785/105325050-0227be80-5b81-11eb-88c1-a090a5a73259.png)
 
  **************************************************************
-** program12:
+** program12:program to implement power_law transformation**
+
+```python
  import cv2
 import numpy as np
 img = cv2.imread('pecock1.jpg')
@@ -491,6 +497,7 @@ for gamma in [0.1, 0.5, 1.2, 2.2]:
     gamma_corrected = np.array(255*(img / 255) ** gamma, dtype = 'uint8')
     cv2.imshow('gamma_transformed'+str(gamma)+'.jpg', gamma_corrected) 
 cv2.waitKey(0)
+```
 
 
 
