@@ -224,10 +224,6 @@ Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
  [17. 31. 19.]]
- **************************************************************************************8
- 
- 
- 
  
  
  ******************************************************************************************************************
@@ -257,8 +253,154 @@ Out[3]:
  [0, 4, 5, 4, 7],
  [0, 9, 6, 1, 0],
  [0, 0, 0, 0, 0]]
+ ***************************************************************************************
+ **program9: operator overloading **
+ #include <iostream>
+using namespace std;
+class matrix
+{
+ int r1, c1, i, j, a1;
+ int a[10][10];
+
+public:int get()
+ {
+  cout << "Enter the row and column size for the  matrix\n";
+  cin >> r1;
+  cin >> c1;
+   cout << "Enter the elements of the matrix\n";
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    cin>>a[i][j];
+
+   }
+  }
+ 
+ 
+ };
+ void operator+(matrix a1)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] + a1.a[i][j];
+    }
+   
+  }
+  cout<<"addition is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+
+ };
+
+  void operator-(matrix a2)
+ {
+ int c[i][j];
+  
+   for (i = 0; i < r1; i++)
+   {
+    for (j = 0; j < c1; j++)
+    {
+     c[i][j] = a[i][j] - a2.a[i][j];
+    }
+   
+  }
+  cout<<"subtraction is\n";
+  for(i=0;i<r1;i++)
+  {
+   cout<<" ";
+   for (j = 0; j < c1; j++)
+   {
+    cout<<c[i][j]<<"\t";
+   }
+   cout<<"\n";
+  }
+ };
+
+ void operator*(matrix a3)
+ {
+  int c[i][j];
+
+  for (i = 0; i < r1; i++)
+  {
+   for (j = 0; j < c1; j++)
+   {
+    c[i][j] =0;
+    for (int k = 0; k < r1; k++)
+    {
+     c[i][j] += a[i][k] * (a3.a[k][j]);
+    }
+  }
+  }
+  cout << "multiplication is\n";
+  for (i = 0; i < r1; i++)
+  {
+   cout << " ";
+   for (j = 0; j < c1; j++)
+   {
+    cout << c[i][j] << "\t";
+   }
+   cout << "\n";
+  }
+ };
+
+};
+
+int main()
+{
+ matrix p,q;
+ p.get();
+ q.get();
+ p + q;
+ p - q;
+ p * q;
+return 0;
+}
+
+output:
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+6
+7
+8
+9
+Enter the row and column size for the  matrix
+2
+2
+Enter the elements of the matrix
+1
+2
+3
+4
+addition is
+ 7	9	
+ 11	13	
+subtraction is
+ 5	5	
+ 5	5	
+multiplication is
+ 27	40	
+ 35	52	
+
+
+
+ 
+ 
 *****************************************************************************************
-**program9:
+**program10:
  program to implement nagative transfromation of image**
  
  ```python
@@ -342,6 +484,7 @@ for gamma in [0.1, 0.5, 1.2, 2.2]:
     gamma_corrected = np.array(255*(img / 255) ** gamma, dtype = 'uint8')
     cv2.imshow('gamma_transformed'+str(gamma)+'.jpg', gamma_corrected) 
 cv2.waitKey(0)
+
 
 
 
