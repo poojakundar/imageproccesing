@@ -224,6 +224,12 @@ Summed neighbors matrix:
  [[11. 19. 13.]
  [23. 40. 27.]
  [17. 31. 19.]]
+ **************************************************************************************8
+ 
+ 
+ 
+ 
+ 
  ******************************************************************************************************************
 **program8:Find the neighborhood values of the matrix**
 
@@ -270,23 +276,25 @@ output:
 
 
 ***********************************************************
-program10:
+**program11:program to implement contrast transformation**
+
+```python
 from PIL import Image, ImageEnhance  
 im = Image.open(r"flower1.jpg")
 im.show()
 im3 = ImageEnhance.Color(im) 
 im3.enhance(4.3).show()
+```
 
 output:
 ![image](https://user-images.githubusercontent.com/72436785/105278728-193fce00-5bcc-11eb-9fb9-c7b82aaac305.png)
 ![image](https://user-images.githubusercontent.com/72436785/105278864-5e640000-5bcc-11eb-805d-ff2496141865.png)
 
 ************************************************
-program11:
-# Python programe to illustrate 
-# simple thresholding type on an image 
-	
-# organizing imports 
+**program11:program to implement threshold transformation of the image**
+
+
+```python
 import cv2 
 import numpy as np 
 
@@ -321,8 +329,11 @@ cv2.imshow('Set to 0 Inverted', thresh5)
 # De-allocate any associated memory usage 
 if cv2.waitKey(0) & 0xff == 27: 
 	cv2.destroyAllWindows()
+```
+output:
+
  **************************************************************
- program12:
+** program12:
  import cv2
 import numpy as np
 img = cv2.imread('pecock1.jpg')
