@@ -11,8 +11,10 @@ to destory all the windows().
 ```python
 import numpy as np
 import cv2
-image=cv2.imread('flower1.jpg',1)
-cv2.imshow('Original', image) 
+image=cv2.imread('flower1.jpg',0)
+im=cv2.imread("flower1.jpg")
+cv2.imshow("original",im)
+cv2.imshow('gray', image) 
 cv2.waitKey(0)
 cv2.destroyAllWindows() 
 cv2.imwrite("grayscale.png",image) 
